@@ -36,6 +36,17 @@ private static final long serialVersionUID = 1L;
 	@Column(nullable =  false)
 	private String nome;
 	
+	@Column(nullable = false)
+	private String email;
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	@Column(nullable =  false)
 	private String senha;
 	

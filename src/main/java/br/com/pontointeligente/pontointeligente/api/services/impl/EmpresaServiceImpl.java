@@ -6,12 +6,12 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.pontointeligente.pontointeligente.api.services.EmpersaService;
+import br.com.pontointeligente.pontointeligente.api.services.EmpresaService;
 import br.com.pontointeligente.pontointeligente.entities.Empresa;
 import br.com.pontointeligente.pontointeligente.repositories.EmpresaRepository;
 
 @Service
-public class EmpresaServiceImpl implements EmpersaService {
+public class EmpresaServiceImpl implements EmpresaService {
 
 	
 	private static final Logger log = org.slf4j.LoggerFactory.getLogger(EmpresaServiceImpl.class);
