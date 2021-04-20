@@ -29,7 +29,7 @@ public class FuncionarioSeriviceImpl implements FuncionarioService {
 	public Optional<Funcionario> buscarPorCpf(String cpf) {
 
 		log.info("Buscando funcionario pelo CNPJ {}", cpf);
-		return Optional.ofNullable(this.funcionaiorRepo.FindbyCpf(cpf));
+		return Optional.ofNullable(this.funcionaiorRepo.findByCpf(cpf));
 	}
 
 	@Override
