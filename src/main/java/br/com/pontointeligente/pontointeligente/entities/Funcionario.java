@@ -121,16 +121,9 @@ private static final long serialVersionUID = 1L;
 		this.valorHora = valorHora;
 	}
 
-	public Optional<Float> getQtdHorasTrabalhoDiaOpt() {
-		return Optional.ofNullable(qtdHorasTrabalhoDia);
-	}
 
 	public void setQtdHorasTrabalhoDia(Float qtdHorasTrabalhoDia) {
 		this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
-	}
-
-	public Optional<Float> getQtdHorasAlmocoOpt() {
-		return Optional.ofNullable(qtdHorasAlmoco);
 	}
 
 	public void setQtdHorasAlmoco(Float qtdHorasAlmoco) {
@@ -189,6 +182,21 @@ private static final long serialVersionUID = 1L;
 		final Date atual = new Date();
 		dataCriacao = atual;
 		dataAtualizacao = atual;
+	}
+	
+	@Transient
+	public Optional<Float> getQtdHorasTrabalhoDiaOpt() {
+		return Optional.ofNullable(qtdHorasTrabalhoDia);
+	}
+	
+	@Transient
+	public Optional<BigDecimal> getValorHorasOpt() {
+		return Optional.ofNullable(valorHora);
+	}
+	
+	@Transient
+	public Optional<Float> getQtdHorasAlmocoOpt() {
+		return Optional.ofNullable(qtdHorasAlmoco);
 	}
 
 	@Override

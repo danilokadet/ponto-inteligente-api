@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.pontointeligente.pontointeligente.CadastroPJDto;
+import br.com.pontointeligente.pontointeligente.api.dtos.CadastroPJDto;
 import br.com.pontointeligente.pontointeligente.api.services.EmpresaService;
 import br.com.pontointeligente.pontointeligente.api.services.FuncionarioService;
 import br.com.pontointeligente.pontointeligente.entities.Empresa;

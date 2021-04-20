@@ -1,4 +1,4 @@
-package br.com.pontointeligente.pontointeligente;
+package br.com.pontointeligente.pontointeligente.api.dtos;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
