@@ -198,6 +198,11 @@ private static final long serialVersionUID = 1L;
 	public Optional<Float> getQtdHorasAlmocoOpt() {
 		return Optional.ofNullable(qtdHorasAlmoco);
 	}
+	
+	public Object setValorHoraOpt(Optional<String> of) {
+		
+		return Optional.ofNullable(valorHora);
+	}
 
 	@Override
 	public String toString() {
@@ -206,6 +211,7 @@ private static final long serialVersionUID = 1L;
 				+ ", perfil=" + perfil + ", dataCriacao=" + dataCriacao + ", empresa=" + empresa + ", lancamentos="
 				+ lancamentos + "]";
 	}
+
 	
 
 }
